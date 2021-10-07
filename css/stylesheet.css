@@ -31,26 +31,15 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
-
-
 .intro-image .btn {
     display: block;
     color: honeydew;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-decoration: none;
-    padding: 1px 4px;
+    padding: 1.5rem 1rem;
     border-radius: 4px;
     background-color: #009fa5;
     transition: all 0.3s;
-}
-.btn:hover {
-    background-color: #009fa54d;
-    transform: translateY(-5px);
-}
-
-.btn:active {
-    transform: translateY(5px);
 }
 
 
@@ -61,7 +50,7 @@ body {
 .intro-text__textbox {
     color: aliceblue;
 }
-.heading-solid {
+.intro-text__textbox .heading-solid {
     font-size: 3rem;
 }
 .text-solid {
@@ -71,24 +60,93 @@ body {
 
 
 .packaging-image {
-    height: 50vh;
+    height: 65vh;
     background-image: url('../img/Delivery.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(0 1%, 100% 5%, 100% 100%, 0 95%);
+    clip-path: polygon(0 3%, 100% 14%, 100% 97%, 0 88%);
     position: relative;
 }
 
+.packaging-image__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
+.packaging-image__text .btn {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 2.2rem;
+    text-decoration: none;
+    padding: 1rem 1.4rem;
+    border-radius: 4px;
+    background-color: #009fa5;
+    transition: all 0.3s;
+}
+
+.packaging-text {
+    text-align: center;
+}
+.packaging_text__textbox {
+    color: aliceblue;
+}
+.packaging_text__textbox .heading-solid {
+    font-size: 3rem;
+}
+.packaging_text__textbox p {
+    font-size: 1.5rem;
+}
+
+
+
+.tutorials-image {
+    height: 95vh;
+    background-image: url('../img/Depression.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 3%, 100% 10%, 100% 100%, 0 100%);
+    position: relative;
+}
+.tutorials-image__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.tutorials-image__text .btn {
+    text-transform: uppercase;
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    text-decoration: none;
+    padding: 1.3rem 3rem;
+    border-radius: 6px;
+    background-color: #009fa5;
+    transition: all 0.3s;
+}
+
+
+
+.btn:hover {
+    background-color: #009fa54d;
+    transform: translateY(-5px);
+}
+.btn:active {
+    transform: translateY(5px);
+}
 
 
 
 .footer {
+    background-color: rgb(21, 255, 0);
     text-align: center;
 }
-
 .contact {
     display: inline-block;
     margin: 1rem;
@@ -97,14 +155,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
 }
 .wrapper i, a {
-  margin-right: 1rem;
-  text-decoration: none;
-  color: var(--text);
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: var(--text);
 }
-
+.wrapper:hover {
+    transform: translateY(-5px);
+}
 li {
     display: inline-table;
     list-style: none;
+}
+
+.copyright {
+    font-size: 1.5rem;
 }
